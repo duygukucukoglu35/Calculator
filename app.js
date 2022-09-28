@@ -62,7 +62,31 @@ btnContainer.addEventListener("click", (e) => {
         num2 = Number(input.innerText);
         num1Done = false;
         floating = false;
+        input2.innerText = "";
+        switch(operator){
+            case "division":
+            input.innerText = num1 / num2;
+            break;
+            case "add":
+            input.innerText = num1 + num2;
+            break;
+            case "sub":
+            input.innerText = num1 - num2;
+            break;
+            case "multi":
+            input.innerText = num1 * num2;
+            break;
+        }
+      }else if(e.target.id=="per" && input.innerText){
+        input.innerText = Number(input.innerText)/100;
+      }else if(e.target.id=="pm" && input.innerText){
+        if(input.innerText.includes("-","");
+      }else{
+        input.innerText ="-" + input.innerText;
+      }else if(e.target.id=="ac"){
         input.innerText = "";
+        input2.innerText = "";
+        num1Done = false;
+        floating = false;
       }
-      duygu
 });
