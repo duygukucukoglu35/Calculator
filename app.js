@@ -64,4 +64,5 @@ btnContainer.addEventListener("click", (e) => {
         floating = false;
         input.innerText = "";
       }
+      duygu
 });
